@@ -40,9 +40,9 @@ app.get("/api/nutrition/:input/:meal", function(req, res){
         console.log(responseBody,"responseBody");
         let nutrients=responseBody.totalNutrients ;
         console.log(nutrients, "nutrients");
-        let carbohydrates =(responseBody).totalNutrients.CHOCDF.quantity;
+        let carbohydrates = nutrients.CHOCDF.quantity ? nutrients.CHOCDF.quantity: 0;
         console.log(carbohydrates, "carbohydrates");
-        let totalFibers=(responseBody).totalNutrients.FIBTG.quantity;
+        let totalFibers=nutrients.FIBTG.quantity ? nutrients.FIBTG.quantity: 0;
         console.log(totalFibers,"totalfibers");
 
         // const netCarbs = responseBody.totalNutrients ;
@@ -52,8 +52,8 @@ app.get("/api/nutrition/:input/:meal", function(req, res){
             // add restaurant function
             RestaurantId:2,
             // meal:userMeal,//.val()
-            carbs:responseBody.totalNutrients && responseBody.totalNutrients.CHOCDF.quantity,
-            fiber:responseBody.totalNutrients && responseBody.totalNutrients.FIBTG.quantity,
+            carbs:nutrients && carbohydrates,
+            fiber:nutrients && totalFibers,
             netCarbs:netCarbs
         };
         console.log(dbItem);
