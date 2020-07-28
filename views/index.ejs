@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Food Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
+</head>
+<style type="text/css">
+  .jumbotron{
+    background: rgb(200, 54, 54);
+   background: rgba(200, 54, 54, 0.0); 
+   padding-top: 150px;
+  }
+
+   .container{
+     padding-bottom: 150px;
+  
+  }
+  </style>
+<body>
+  <!-- <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Food Tracker
+    </a>
+  </nav> -->
+  <div class="container" style="background-image: url(./assets/css/food.webp);" >
+    <div style="margin-top: 80px;" class="jumbotron text-center">
+      <h1 class="display-4" style="color:rgb(29, 214, 128);" >Food Tracker <span role="img" aria-label="Memo">
+      </span></h1>
+<!-- ──────────────────────────────────────────────────────────────────────────────── -->
+
+<!-- ──────────────────────────────────────────────────────────────────────────────── -->
+
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Restaurant</span>
+        </div>
+        <input type="text" class="form-control" id="restaurantBox" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Meal</span>
+        </div>
+        <input type="text" class="form-control" id="mealBox" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
+     
+      <div class="form-group shadow-textarea">
+        <textarea class="form-control z-depth-1" id="analyze" rows="3" placeholder="Analyze your meal..."></textarea>
+      </div>
+      <!-- This needs to go to the next page and save all the data into a table -->
+      <a class="btn btn-primary btn-lg mt-4" href="/notes" role="button">Analyze</a>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
