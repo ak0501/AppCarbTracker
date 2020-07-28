@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Scot_Avi_CarbTracker
 get all the restaurants--names, id --- sort them alphabetically
  fetch(api/restaurants)
@@ -19,3 +20,6 @@ fetch(post, /api/restuarants)
     }).catch(function(err) {
         boo your insert failed.
     });
+=======
+# AppCarbTracker
+>>>>>>> 2a08b410f623985dd6ec9cd4c0e23c758ec77e49
