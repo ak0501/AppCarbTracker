@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS `trackFood`;
+CREATE DATABASE `trackFood`;
+
