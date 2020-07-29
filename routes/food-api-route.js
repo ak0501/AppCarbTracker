@@ -21,10 +21,16 @@ module.exports = function(app) {
     // since we are creating the meals ? do we need req.params.meals???????????????????
     // This is not coming from the API server
 /* ------------------------------- Back End server requesting the external API for data ------------------------------ */
+<<<<<<< HEAD
 app.get("/api/nutrition/:input/:meal/:RestaurantId", function(req, res){
     const userInput = req.params.input;
     const userMeal = req.params.meal;
     const resId = req.params.RestaurantId;
+=======
+app.get("/api/nutrition/:input/:meal", function(req, res){
+    const userInput = req.params.input;
+    // const userMeal = req.params.meals;
+>>>>>>> de7a68b7c9555b094d37d749f4980395a49e929a
     // https://api.edamam.com/api/nutrition-data?app_id=7a57ac67&app_key=8868f05120bf80af87dfd7844e4d4466&ingr=1%20large%20apple
     const queryURL = `https://api.edamam.com/api/nutrition-data?app_id=${process.env.APP_ID}&app_key=${process.env.APP_KEY}&ingr=${userInput}`;
     var options = {
@@ -51,8 +57,13 @@ app.get("/api/nutrition/:input/:meal/:RestaurantId", function(req, res){
         console.log(netCarbs,"netCarbs");
         var dbItem = {
             // add restaurant function
+<<<<<<< HEAD
             RestaurantId: resId,
             meal:userMeal,
+=======
+            RestaurantId:2,
+            // meal:userMeal,//.val()
+>>>>>>> de7a68b7c9555b094d37d749f4980395a49e929a
             carbs:nutrients && carbohydrates,
             fiber:nutrients && totalFibers,
             netCarbs:netCarbs

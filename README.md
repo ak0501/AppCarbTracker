@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> de7a68b7c9555b094d37d749f4980395a49e929a
 # Scot_Avi_CarbTracker
 get all the restaurants--names, id --- sort them alphabetically
  fetch(api/restaurants)
@@ -24,6 +27,9 @@ fetch(post, /api/restuarants)
 =======
 # AppCarbTracker
 >>>>>>> 2a08b410f623985dd6ec9cd4c0e23c758ec77e49
+<<<<<<< HEAD
 =======
 # NameIdAppCarbTracker
 >>>>>>> b00bc7a47bbc0b2826f5fef974a241618e8aa740
+=======
+>>>>>>> de7a68b7c9555b094d37d749f4980395a49e929a
